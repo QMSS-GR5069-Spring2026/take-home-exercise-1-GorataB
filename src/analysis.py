@@ -76,3 +76,4 @@ def extreme_rank_countries(df: pd.DataFrame, rank_col1: str, rank_col2: str, top
     temp['rank_difference'] = temp[rank_col1] - temp['rank_col2_calc']
     return temp.sort_values('rank_difference', ascending=False).head(top_n)
 
+# PR from momodesu0025
